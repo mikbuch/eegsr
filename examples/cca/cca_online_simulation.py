@@ -10,14 +10,17 @@ Take samples from source file, filters it and classifies.
 # Download example file and get it's location.
 source_file = fetch_example('cca_ssvep_decoding')
 
+fs = 256
+
 # Define filter object.
-flt = FltRealTime(bandstop=(49, 51), bandpass=(1, 50))
+flt = FltRealTime(bandstop=(49, 51), bandpass=(1, 50), fs=fs)
 
 # Define CCA object.
-cca = CCA(ref_signals={'type': 'ideal', 'harmonics': 1})
+cca = CCA(ref_signals={'type': 'ideal', 'harmonics': 1}, fs=fs,
+          win_len=int(fs/2.), vis=True, verbose=True)
 
 # If timecode set, the output will be written into file with
 # current date.
-manager = Manager(filter=flt, cls=cca, source_file=source_file,
+manager = Manager(flt=flt, cls=cca, source_file=source_file,
                   record_data=True, output_file='timecode')
 manager.run()

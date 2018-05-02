@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: EEgSR
+Version: 0.0.1
+Summary: EEG/GSR acquisition and analysis tools.
+Home-page: http://mikbuch.github.io/eegsr
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: BSD
+Description: UNKNOWN
+Keywords: EEG GSR BCI filtering plotting online realtime
+Platform: UNKNOWN

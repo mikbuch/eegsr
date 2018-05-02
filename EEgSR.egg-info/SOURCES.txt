@@ -1,0 +1,13 @@
+setup.py
+EEgSR.egg-info/PKG-INFO
+EEgSR.egg-info/SOURCES.txt
+EEgSR.egg-info/dependency_links.txt
+EEgSR.egg-info/requires.txt
+EEgSR.egg-info/top_level.txt
+EEgSR.egg-info/zip-safe
+eegsr/__init__.py
+eegsr/dataset/__init__.py
+eegsr/dataset/dataset.py
+eegsr/openbci/__init__.py
+eegsr/openbci/open_bci_ganglion.py
+eegsr/openbci/open_bci_v3.py

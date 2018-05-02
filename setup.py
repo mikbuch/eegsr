@@ -17,5 +17,6 @@ setup(
     url="http://mikbuch.github.io/eegsr",
     packages=find_packages(exclude=['examples', 'docs']),
     include_package_data=True,
-    install_requires=['scipy', 'matplotlib', 'sklearn'],
+    install_requires=["scipy"],
+    zip_safe=True,
 )
